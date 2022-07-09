@@ -37,7 +37,7 @@ function displayTemperature(response) {
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
-apiKey = "d802976f477570e48bb8e76c26f9538d";
+apiKey = "094c7bfd473b1f011f590bb136d1e42d";
 let city = "New York";
 apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`;
 
