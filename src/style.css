@@ -5,6 +5,7 @@ body {
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+  background-color: aquamarine;
 }
 .weather-app {
   padding: 20px;
@@ -36,6 +37,10 @@ li {
 
 li.first-letter {
     text-transform: capitalize;
+}
+img.iconfun {
+  margin-left: 150px;
+
 }
 
 .weather-temperature img {
