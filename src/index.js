@@ -69,7 +69,7 @@ function displayForecast(response) {
 
               function gatForecast (coordinates) {
                 let apiKey = "094c7bfd473b1f011f590bb136d1e42d";
-                let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apikey}& units=metric`;
+                let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apikey}& units=metric`;
               axios.get(apiUrl).then(displayForecast);
             }
 
@@ -95,7 +95,7 @@ function displayForecast(response) {
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   iconElement.setAttribute("alt", response.data.weather.description);
 
-  getForecast (response.data.coord);
+  gatForecast (response.data.coord);
 }
 
 function search(city) {
